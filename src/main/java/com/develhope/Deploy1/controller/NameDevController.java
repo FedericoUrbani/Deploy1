@@ -11,9 +11,9 @@ public class NameDevController {
     @Autowired
     private Environment environment;
 
-    @GetMapping("/aa")
+    @GetMapping("")
     public String devName(){
-        String var= environment.getProperty("myCustomVarTree.mycustomvar");
+        String var= environment.getProperty("myCustomVarTree.devName");
         return var;
     }
 
